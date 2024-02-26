@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="7.935" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="Contact us form" name="Check contact us form with valid date and submit - Example #1.1" time="2.956">
+<system-out><![CDATA[
+Given open URL link.........................................................passed
+When fill fields "Ivan" "Ivanov" "Ivanov@gmail.com" "Test1".................passed
+Then Message: Thank you for your Message!...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Contact us form" name="Check contact us form with valid date and submit - Example #1.2" time="2.357">
+<system-out><![CDATA[
+Given open URL link.........................................................passed
+When fill fields "John1" "-" "John@gmail.com" "-"...........................passed
+Then Message: Thank you for your Message!...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Contact us form" name="Check contact us form with valid date and submit - Example #1.3" time="2.403">
+<system-out><![CDATA[
+Given open URL link.........................................................passed
+When fill fields "123" "123" "Ivanov@gmail.com" "Test2".....................passed
+Then Message: Thank you for your Message!...................................passed
+]]></system-out>
+</testcase>
+</testsuite>
