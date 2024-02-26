@@ -16,7 +16,6 @@ public class ContactUsPage extends BaseComponent{
     public WebElement emailInput;
     @FindBy(xpath = "//*[@id='contact_form']/textarea")
     public WebElement messageInput;
-
     @FindBy(xpath = "//*[@value='SUBMIT']")
     public WebElement submitButton;
     @FindBy(tagName = "h1")
