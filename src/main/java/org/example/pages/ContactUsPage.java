@@ -20,5 +20,6 @@ public class ContactUsPage extends BaseComponent{
     public WebElement submitButton;
     @FindBy(tagName = "h1")
     public WebElement thanksMsg;
-
+    @FindBy(xpath = "//body")
+    public WebElement errorMsg;
 }
