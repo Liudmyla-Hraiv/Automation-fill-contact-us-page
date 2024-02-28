@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="23.305" tests="9" skipped="0" failures="0" errors="0">
+<testcase classname="Contact us form" name="Check &quot;contact us&quot; page  with valid date (positive tests) - Example #1.1" time="3.365">
+<system-out><![CDATA[
+Given open URL link.........................................................passed
+When fill fields "Ivan" "Ivanov" "Ivanov@gmail.com" "Test1".................passed
+Then message shown "Thank You for your Message!"............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Contact us form" name="Check &quot;contact us&quot; page  with valid date (positive tests) - Example #1.2" time="2.512">
+<system-out><![CDATA[
+Given open URL link.........................................................passed
+When fill fields "123" "123" "Ivanov@gmail.com" "1".........................passed
+Then message shown "Thank You for your Message!"............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Contact us form" name="Check &quot;contact us&quot; page  with valid date (positive tests) - Example #1.3" time="2.289">
+<system-out><![CDATA[
+Given open URL link.........................................................passed
+When fill fields "-" "-" "example@gmail.com" "-"............................passed
+Then message shown "Thank You for your Message!"............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Contact us form" name="Check c&quot;contact us&quot; page with Invalid date (negative tests) - Example #1.1" time="2.086">
+<system-out><![CDATA[
+Given open URL link.........................................................passed
+When fill fields "" "Smith" "Ivanov@gmail.com" "Test2"......................passed
+Then Error message shown "Error: all fields are required"...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Contact us form" name="Check c&quot;contact us&quot; page with Invalid date (negative tests) - Example #1.2" time="2.152">
+<system-out><![CDATA[
+Given open URL link.........................................................passed
+When fill fields "Ivan" "" "Ivanov@gmail.com" "Test1".......................passed
+Then Error message shown "Error: all fields are required"...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Contact us form" name="Check c&quot;contact us&quot; page with Invalid date (negative tests) - Example #1.3" time="2.477">
+<system-out><![CDATA[
+Given open URL link.........................................................passed
+When fill fields "Oliver" "Smith" "" "Test2"................................passed
+Then Error message shown "Error: Invalid email address".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Contact us form" name="Check c&quot;contact us&quot; page with Invalid date (negative tests) - Example #1.4" time="2.885">
+<system-out><![CDATA[
+Given open URL link.........................................................passed
+When fill fields "Oliver" "Smith" "something" "Test2".......................passed
+Then Error message shown "Error: Invalid email address".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Contact us form" name="Check c&quot;contact us&quot; page with Invalid date (negative tests) - Example #1.5" time="2.348">
+<system-out><![CDATA[
+Given open URL link.........................................................passed
+When fill fields "Oliver" "Smith" "something@" "Test2"......................passed
+Then Error message shown "Error: Invalid email address".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Contact us form" name="Check c&quot;contact us&quot; page with Invalid date (negative tests) - Example #1.6" time="2.935">
+<system-out><![CDATA[
+Given open URL link.........................................................passed
+When fill fields "Ivan" "Ivanov" "any@example.com" "".......................passed
+Then Error message shown "Error: all fields are required"...................passed
+]]></system-out>
+</testcase>
+</testsuite>
